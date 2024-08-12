@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FarmaGuanacaste</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>FarmaGuanacaste</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#encargos">Encargos y Pedidos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+            </ul>
+            <div id="cart-icon">
+                <img src="images/cart.png" alt="Carrito de Compras" onclick="toggleCartModal()">
+            </div>
+        </nav>
+        <form id="search-form">
+            <input type="text" id="search-input" placeholder="Buscar productos...">
+            <button type="submit">Buscar</button>
+        </form>
+    </header>
+
+    <section id="inicio">
+        <h2>Bienvenido a FarmaGuanacaste</h2>
+        <p>Encuentra los mejores productos para tu salud.</p>
+    </section>
+
+    <section id="productos">
+        <h2>Productos Destacados</h2>
+        
+    <div class="producto">
+        <img src="images/producto.png" alt="Aspirina">
+        <h3>Aspirina</h3>
+        <p>Precio: ₡36591.47</p>
+        <button onclick="showProductModal('Aspirina')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Paracetamol">
+        <h3>Paracetamol</h3>
+        <p>Precio: ₡31819.72</p>
+        <button onclick="showProductModal('Paracetamol')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Ibuprofeno">
+        <h3>Ibuprofeno</h3>
+        <p>Precio: ₡20299.65</p>
+        <button onclick="showProductModal('Ibuprofeno')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Amoxicilina">
+        <h3>Amoxicilina</h3>
+        <p>Precio: ₡36829.98</p>
+        <button onclick="showProductModal('Amoxicilina')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Loratadina">
+        <h3>Loratadina</h3>
+        <p>Precio: ₡45748.43</p>
+        <button onclick="showProductModal('Loratadina')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Omeprazol">
+        <h3>Omeprazol</h3>
+        <p>Precio: ₡47833.99</p>
+        <button onclick="showProductModal('Omeprazol')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Ranitidina">
+        <h3>Ranitidina</h3>
+        <p>Precio: ₡33686.07</p>
+        <button onclick="showProductModal('Ranitidina')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Metformina">
+        <h3>Metformina</h3>
+        <p>Precio: ₡21527.56</p>
+        <button onclick="showProductModal('Metformina')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Simvastatina">
+        <h3>Simvastatina</h3>
+        <p>Precio: ₡8391.08</p>
+        <button onclick="showProductModal('Simvastatina')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Losartan">
+        <h3>Losartan</h3>
+        <p>Precio: ₡10570.58</p>
+        <button onclick="showProductModal('Losartan')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Enalapril">
+        <h3>Enalapril</h3>
+        <p>Precio: ₡36883.94</p>
+        <button onclick="showProductModal('Enalapril')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Atorvastatina">
+        <h3>Atorvastatina</h3>
+        <p>Precio: ₡22967.22</p>
+        <button onclick="showProductModal('Atorvastatina')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Azitromicina">
+        <h3>Azitromicina</h3>
+        <p>Precio: ₡41348.74</p>
+        <button onclick="showProductModal('Azitromicina')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Ciprofloxacina">
+        <h3>Ciprofloxacina</h3>
+        <p>Precio: ₡35032.72</p>
+        <button onclick="showProductModal('Ciprofloxacina')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Furosemida">
+        <h3>Furosemida</h3>
+        <p>Precio: ₡8568.23</p>
+        <button onclick="showProductModal('Furosemida')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Levotiroxina">
+        <h3>Levotiroxina</h3>
+        <p>Precio: ₡21351.75</p>
+        <button onclick="showProductModal('Levotiroxina')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Clonazepam">
+        <h3>Clonazepam</h3>
+        <p>Precio: ₡49236.69</p>
+        <button onclick="showProductModal('Clonazepam')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Diazepam">
+        <h3>Diazepam</h3>
+        <p>Precio: ₡15414.99</p>
+        <button onclick="showProductModal('Diazepam')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Diclofenaco">
+        <h3>Diclofenaco</h3>
+        <p>Precio: ₡13926.36</p>
+        <button onclick="showProductModal('Diclofenaco')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Doxiciclina">
+        <h3>Doxiciclina</h3>
+        <p>Precio: ₡33996.5</p>
+        <button onclick="showProductModal('Doxiciclina')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Hidroxicloroquina">
+        <h3>Hidroxicloroquina</h3>
+        <p>Precio: ₡31174.52</p>
+        <button onclick="showProductModal('Hidroxicloroquina')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Insulina">
+        <h3>Insulina</h3>
+        <p>Precio: ₡27216.28</p>
+        <button onclick="showProductModal('Insulina')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Prednisona">
+        <h3>Prednisona</h3>
+        <p>Precio: ₡46916.62</p>
+        <button onclick="showProductModal('Prednisona')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Amlodipino">
+        <h3>Amlodipino</h3>
+        <p>Precio: ₡3723.34</p>
+        <button onclick="showProductModal('Amlodipino')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Verapamilo">
+        <h3>Verapamilo</h3>
+        <p>Precio: ₡49064.53</p>
+        <button onclick="showProductModal('Verapamilo')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Captopril">
+        <h3>Captopril</h3>
+        <p>Precio: ₡49580.17</p>
+        <button onclick="showProductModal('Captopril')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Metoprolol">
+        <h3>Metoprolol</h3>
+        <p>Precio: ₡32173.23</p>
+        <button onclick="showProductModal('Metoprolol')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Claritromicina">
+        <h3>Claritromicina</h3>
+        <p>Precio: ₡23067.98</p>
+        <button onclick="showProductModal('Claritromicina')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Naproxeno">
+        <h3>Naproxeno</h3>
+        <p>Precio: ₡36050.08</p>
+        <button onclick="showProductModal('Naproxeno')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Ketorolaco">
+        <h3>Ketorolaco</h3>
+        <p>Precio: ₡46060.31</p>
+        <button onclick="showProductModal('Ketorolaco')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Lisinopril">
+        <h3>Lisinopril</h3>
+        <p>Precio: ₡24652.9</p>
+        <button onclick="showProductModal('Lisinopril')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Glibenclamida">
+        <h3>Glibenclamida</h3>
+        <p>Precio: ₡35243.67</p>
+        <button onclick="showProductModal('Glibenclamida')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Atenolol">
+        <h3>Atenolol</h3>
+        <p>Precio: ₡39956.63</p>
+        <button onclick="showProductModal('Atenolol')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Carvedilol">
+        <h3>Carvedilol</h3>
+        <p>Precio: ₡47649.11</p>
+        <button onclick="showProductModal('Carvedilol')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Esomeprazol">
+        <h3>Esomeprazol</h3>
+        <p>Precio: ₡3830.13</p>
+        <button onclick="showProductModal('Esomeprazol')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Clopidogrel">
+        <h3>Clopidogrel</h3>
+        <p>Precio: ₡34871.19</p>
+        <button onclick="showProductModal('Clopidogrel')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Warfarina">
+        <h3>Warfarina</h3>
+        <p>Precio: ₡40658.69</p>
+        <button onclick="showProductModal('Warfarina')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Simeticona">
+        <h3>Simeticona</h3>
+        <p>Precio: ₡24688.57</p>
+        <button onclick="showProductModal('Simeticona')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Bisoprolol">
+        <h3>Bisoprolol</h3>
+        <p>Precio: ₡42829.77</p>
+        <button onclick="showProductModal('Bisoprolol')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Fosinopril">
+        <h3>Fosinopril</h3>
+        <p>Precio: ₡28829.46</p>
+        <button onclick="showProductModal('Fosinopril')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Rosuvastatina">
+        <h3>Rosuvastatina</h3>
+        <p>Precio: ₡36333.29</p>
+        <button onclick="showProductModal('Rosuvastatina')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Cetirizina">
+        <h3>Cetirizina</h3>
+        <p>Precio: ₡15645.82</p>
+        <button onclick="showProductModal('Cetirizina')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Escitalopram">
+        <h3>Escitalopram</h3>
+        <p>Precio: ₡39190.12</p>
+        <button onclick="showProductModal('Escitalopram')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Venlafaxina">
+        <h3>Venlafaxina</h3>
+        <p>Precio: ₡32777.9</p>
+        <button onclick="showProductModal('Venlafaxina')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Sertralina">
+        <h3>Sertralina</h3>
+        <p>Precio: ₡18877.11</p>
+        <button onclick="showProductModal('Sertralina')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Bromazepam">
+        <h3>Bromazepam</h3>
+        <p>Precio: ₡9121.29</p>
+        <button onclick="showProductModal('Bromazepam')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Lansoprazol">
+        <h3>Lansoprazol</h3>
+        <p>Precio: ₡27656.4</p>
+        <button onclick="showProductModal('Lansoprazol')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Pantoprazol">
+        <h3>Pantoprazol</h3>
+        <p>Precio: ₡30842.17</p>
+        <button onclick="showProductModal('Pantoprazol')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Omeprazol">
+        <h3>Omeprazol</h3>
+        <p>Precio: ₡49161.52</p>
+        <button onclick="showProductModal('Omeprazol')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Dexametasona">
+        <h3>Dexametasona</h3>
+        <p>Precio: ₡23268.38</p>
+        <button onclick="showProductModal('Dexametasona')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Betametasona">
+        <h3>Betametasona</h3>
+        <p>Precio: ₡23733.77</p>
+        <button onclick="showProductModal('Betametasona')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Fluconazol">
+        <h3>Fluconazol</h3>
+        <p>Precio: ₡10249.24</p>
+        <button onclick="showProductModal('Fluconazol')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Miconazol">
+        <h3>Miconazol</h3>
+        <p>Precio: ₡25607.78</p>
+        <button onclick="showProductModal('Miconazol')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Nistatina">
+        <h3>Nistatina</h3>
+        <p>Precio: ₡3924.33</p>
+        <button onclick="showProductModal('Nistatina')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Ciclosporina">
+        <h3>Ciclosporina</h3>
+        <p>Precio: ₡2086.65</p>
+        <button onclick="showProductModal('Ciclosporina')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Tacrolimus">
+        <h3>Tacrolimus</h3>
+        <p>Precio: ₡26685.98</p>
+        <button onclick="showProductModal('Tacrolimus')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Metotrexato">
+        <h3>Metotrexato</h3>
+        <p>Precio: ₡32521.51</p>
+        <button onclick="showProductModal('Metotrexato')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Ciclosporina">
+        <h3>Ciclosporina</h3>
+        <p>Precio: ₡4226.81</p>
+        <button onclick="showProductModal('Ciclosporina')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Tramadol">
+        <h3>Tramadol</h3>
+        <p>Precio: ₡37353.82</p>
+        <button onclick="showProductModal('Tramadol')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Morfina">
+        <h3>Morfina</h3>
+        <p>Precio: ₡13041.53</p>
+        <button onclick="showProductModal('Morfina')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Hidromorfona">
+        <h3>Hidromorfona</h3>
+        <p>Precio: ₡19012.39</p>
+        <button onclick="showProductModal('Hidromorfona')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Oximorfona">
+        <h3>Oximorfona</h3>
+        <p>Precio: ₡30638.65</p>
+        <button onclick="showProductModal('Oximorfona')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Oxycodona">
+        <h3>Oxycodona</h3>
+        <p>Precio: ₡20928.37</p>
+        <button onclick="showProductModal('Oxycodona')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Metadona">
+        <h3>Metadona</h3>
+        <p>Precio: ₡39866.06</p>
+        <button onclick="showProductModal('Metadona')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Buprenorfina">
+        <h3>Buprenorfina</h3>
+        <p>Precio: ₡34505.17</p>
+        <button onclick="showProductModal('Buprenorfina')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Naloxona">
+        <h3>Naloxona</h3>
+        <p>Precio: ₡2147.88</p>
+        <button onclick="showProductModal('Naloxona')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Naltrexona">
+        <h3>Naltrexona</h3>
+        <p>Precio: ₡42077.62</p>
+        <button onclick="showProductModal('Naltrexona')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Doxazosina">
+        <h3>Doxazosina</h3>
+        <p>Precio: ₡13051.43</p>
+        <button onclick="showProductModal('Doxazosina')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Tamsulosina">
+        <h3>Tamsulosina</h3>
+        <p>Precio: ₡13911.32</p>
+        <button onclick="showProductModal('Tamsulosina')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Finasteride">
+        <h3>Finasteride</h3>
+        <p>Precio: ₡20548.19</p>
+        <button onclick="showProductModal('Finasteride')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Dutasteride">
+        <h3>Dutasteride</h3>
+        <p>Precio: ₡39117.06</p>
+        <button onclick="showProductModal('Dutasteride')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Sildenafil">
+        <h3>Sildenafil</h3>
+        <p>Precio: ₡6888.53</p>
+        <button onclick="showProductModal('Sildenafil')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Tadalafil">
+        <h3>Tadalafil</h3>
+        <p>Precio: ₡35914.34</p>
+        <button onclick="showProductModal('Tadalafil')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Vardenafil">
+        <h3>Vardenafil</h3>
+        <p>Precio: ₡10533.94</p>
+        <button onclick="showProductModal('Vardenafil')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Alprazolam">
+        <h3>Alprazolam</h3>
+        <p>Precio: ₡37508.57</p>
+        <button onclick="showProductModal('Alprazolam')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Clobazam">
+        <h3>Clobazam</h3>
+        <p>Precio: ₡10822.29</p>
+        <button onclick="showProductModal('Clobazam')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Lorazepam">
+        <h3>Lorazepam</h3>
+        <p>Precio: ₡30021.52</p>
+        <button onclick="showProductModal('Lorazepam')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Midazolam">
+        <h3>Midazolam</h3>
+        <p>Precio: ₡49537.15</p>
+        <button onclick="showProductModal('Midazolam')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Nitrazepam">
+        <h3>Nitrazepam</h3>
+        <p>Precio: ₡41886.42</p>
+        <button onclick="showProductModal('Nitrazepam')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Oxazepam">
+        <h3>Oxazepam</h3>
+        <p>Precio: ₡13097.12</p>
+        <button onclick="showProductModal('Oxazepam')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Temazepam">
+        <h3>Temazepam</h3>
+        <p>Precio: ₡35923.95</p>
+        <button onclick="showProductModal('Temazepam')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Zolpidem">
+        <h3>Zolpidem</h3>
+        <p>Precio: ₡35407.05</p>
+        <button onclick="showProductModal('Zolpidem')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Zopiclona">
+        <h3>Zopiclona</h3>
+        <p>Precio: ₡40771.95</p>
+        <button onclick="showProductModal('Zopiclona')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Eszopiclona">
+        <h3>Eszopiclona</h3>
+        <p>Precio: ₡42841.37</p>
+        <button onclick="showProductModal('Eszopiclona')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Ramelteon">
+        <h3>Ramelteon</h3>
+        <p>Precio: ₡14670.75</p>
+        <button onclick="showProductModal('Ramelteon')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Melatonina">
+        <h3>Melatonina</h3>
+        <p>Precio: ₡17709.95</p>
+        <button onclick="showProductModal('Melatonina')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Mirtazapina">
+        <h3>Mirtazapina</h3>
+        <p>Precio: ₡18628.14</p>
+        <button onclick="showProductModal('Mirtazapina')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Trazodona">
+        <h3>Trazodona</h3>
+        <p>Precio: ₡17945.19</p>
+        <button onclick="showProductModal('Trazodona')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Amitriptilina">
+        <h3>Amitriptilina</h3>
+        <p>Precio: ₡17360.4</p>
+        <button onclick="showProductModal('Amitriptilina')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Nortriptilina">
+        <h3>Nortriptilina</h3>
+        <p>Precio: ₡7255.47</p>
+        <button onclick="showProductModal('Nortriptilina')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Imipramina">
+        <h3>Imipramina</h3>
+        <p>Precio: ₡25745.42</p>
+        <button onclick="showProductModal('Imipramina')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Clomipramina">
+        <h3>Clomipramina</h3>
+        <p>Precio: ₡35109.04</p>
+        <button onclick="showProductModal('Clomipramina')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Doxepina">
+        <h3>Doxepina</h3>
+        <p>Precio: ₡6142.91</p>
+        <button onclick="showProductModal('Doxepina')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Trimipramina">
+        <h3>Trimipramina</h3>
+        <p>Precio: ₡10899.12</p>
+        <button onclick="showProductModal('Trimipramina')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Protriptilina">
+        <h3>Protriptilina</h3>
+        <p>Precio: ₡3225.29</p>
+        <button onclick="showProductModal('Protriptilina')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Desipramina">
+        <h3>Desipramina</h3>
+        <p>Precio: ₡8580.44</p>
+        <button onclick="showProductModal('Desipramina')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Maprotilina">
+        <h3>Maprotilina</h3>
+        <p>Precio: ₡47813.98</p>
+        <button onclick="showProductModal('Maprotilina')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Viloxazina">
+        <h3>Viloxazina</h3>
+        <p>Precio: ₡22639.42</p>
+        <button onclick="showProductModal('Viloxazina')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Reboxetina">
+        <h3>Reboxetina</h3>
+        <p>Precio: ₡9898.85</p>
+        <button onclick="showProductModal('Reboxetina')">Ver Producto</button>
+    </div>
+    
+    <div class="producto">
+        <img src="images/producto.png" alt="Bupropión">
+        <h3>Bupropión</h3>
+        <p>Precio: ₡26077.67</p>
+        <button onclick="showProductModal('Bupropión')">Ver Producto</button>
+    </div>
+    
+    </section>
+
+    <!-- Modal para el carrito -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="toggleCartModal()">&times;</span>
+            <h2>Carrito de Compras</h2>
+            <div id="cart-items"></div>
+            <button onclick="realizarPago()">Realizar Pago</button>
+        </div>
+    </div>
+
+    <!-- Modal para la descripción del producto -->
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="toggleProductModal()">&times;</span>
+        </div>
+    </div>
+
+    <section id="encargos">
+        <h2>Encarga y Pide tus Productos</h2>
+        <form>
+            <label for="nombre">Nombre del Producto:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="cantidad">Cantidad:</label>
+            <input type="number" id="cantidad" name="cantidad" required>
+            <label for="mensaje">Mensaje Adicional:</label>
+            <textarea id="mensaje" name="mensaje"></textarea>
+            <button type="submit">Enviar Encargo</button>
+        </form>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Teléfono: 123-456-7890</p>
+        <p>Email: contacto@farmaguanacaste.com</p>
+        <p>Dirección: Calle Principal #123, Ciudad</p>
+        <form>
+            <label for="consulta">Tu Consulta:</label>
+            <textarea id="consulta" name="consulta" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 FarmaGuanacaste. Todos los derechos reservados.</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
